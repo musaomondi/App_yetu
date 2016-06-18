@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   root 'staticpages#home'
 
   get 'staticpages/about'

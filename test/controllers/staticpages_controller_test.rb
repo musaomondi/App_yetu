@@ -10,12 +10,14 @@ class StaticpagesControllerTest < ActionDispatch::IntegrationTest
     get root_url
     assert_response :success
     assert_select 'title', "Home #{@common_title}"
+    
   end
 
   test "should get about" do
     get staticpages_about_url
     assert_response :success
     assert_select 'title', "About #{@common_title}"
+
 
   end
 
