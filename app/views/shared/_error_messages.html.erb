@@ -1,0 +1,6 @@
+The form has <%= pluralize(@user.errors.count, "error") %>
+<ul>
+	<%= @user.errors.full_messages.each do |m| %>
+		<li><%= m %></ul>
+		<%end%>
+</ul>
